@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recuperação</title>
+    <style>
+        a{color: #ffffff;}
+        </style>
+</head>
+<body>
+    <section>
+        <h2>Recuperar senha</h2>
+        <form action="SenhaRecuperada.html" method="post">
+            <label>Digite seu CPF:</label>
+            <input type="text" name="cpf" autocomplete="off" placeholder="Não coloque pontos ou traços!" pattern="[0-9]{11}" title="Somente números e com 11 digitos" required>
+            <label>Crie uma nova senha:</label>
+            <input type="password" name="senha" autocomplete="off" required>
+            <label>Confirme sua nova senha:</label>
+            <input type="password" name="repsenha" autocomplete="off" required> 
+            <button type="submit" name="Enviar">Alterar senha</button>
+            <a href="Home.html">Voltar para a Home</a>
+        </form>
+    </section>
+</body>
+</html>

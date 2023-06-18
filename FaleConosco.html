@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fale Conosco</title>
+    <style type="text/css">
+        a{color:#ffffff}
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Fale Conosco</h2>
+        <form action="ObgFale.html" method="post">
+            <label>Nome completo</label>
+            <input type="text" name="name" placeholder="Digite seu nome"  pattern="[a-z\s]+$" title="Use apenas letras" autocomplete="off" required>
+            <label>Digite seu CPF:</label>
+            <input type="text" name="cpf" autocomplete="off" placeholder="Não coloque pontos ou traços!" pattern="[0-9]{11}" title="Somente números e com 11 digitos" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Dúvidas/Críticas/Elogios/Sugestões" required></textarea>
+            <button type="submit">Enviar</button>
+            <h4><a href="Home.html">Voltar para a Home</a></h4>
+        </form>
+    </section>
+</body>
+</html>

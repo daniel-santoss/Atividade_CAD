@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .select {
+    height: 50px} a{ color:#ffffff}
+
+    </style>
+    <title>Cadastro</title>
+</head>
+<body>
+    <section>
+        <h2>Cadastro</h2>
+        <form action="Obrigado.html" method="post">
+            <label>Digite seu nome completo:</label>
+            <input type="text" name="nome1" placeholder="Digite seu nome" autocomplete="off" pattern="[a-z\s]+$" title="Use apenas letras" required>
+            <label>Digite o nome da sua mãe</label>
+            <input type="text" name="nomemae" placeholder="Nome da mãe" autocomplete="off" pattern="[a-z\s]+$" title="Use apenas letras" required>
+            <label>Sexo:</label>
+            <select id="Sexo" class="select">
+                <option>Selecione:</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+            <br>
+            <label>Data de nascimento:</label>
+            <input type="date"  name="nascimento" required>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail:" autocomplete="off" required>
+            <label>Telefone:</label>
+            <input type="tel" name="usertel" placeholder ="(99) 9999-9999" pattern= "\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" title="Utilize esse formato: (99) 9999-9999" required>
+            <label>Digite seu CPF:</label>
+            <input type="text" name="cpf" autocomplete="off" placeholder="Não coloque pontos ou traços!" pattern="[0-9]{11}" title="Somente números e com 11 digitos" required>
+            <label>Crie uma senha</label>
+            <input type="password" name="senha" placeholder="Use uma senha forte" autocomplete="off" required>
+            <label>Confirmar senha:</label>
+            <input type="password" name="repsenha" autocomplete="off" required> 
+            <button type="submit" name="Enviar">Enviar</button>
+            <h4><a href="Home.html">Voltar para a Home</a></h4>
+        </form>
+    </section>
+</body>
+</html>
